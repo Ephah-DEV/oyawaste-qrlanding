@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#0B6B4A" />
+<meta name="description" content="Oya Waste Management Limited — Port Harcourt, Rivers State." />
+<title>Oya Waste Management Limited</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    color: #10231B;
+    background: #DDEFE6;
+    font-family: Manrope, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: #0B6B4A; text-decoration: none; }
+  a:hover { color: #12805A; }
+  a:focus-visible {
+    outline: 2px solid #0B6B4A;
+    outline-offset: 3px;
+    border-radius: 10px;
+  }
+  @keyframes oyaReveal {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes oyaAtmosphere {
+    from { transform: scale(1); }
+    to { transform: scale(1.05); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: .01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: .01ms !important;
+    }
+  }
+</style>
+</helmet>
+
+<div style="position: relative; min-height: 100svh; display: grid; place-items: center; padding: clamp(16px, 3.4vw, 42px) clamp(10px, 2.4vw, 20px); overflow: hidden;">
+
+  <div aria-hidden="true" style="position: fixed; inset: 0; z-index: 0; animation: oyaAtmosphere 14s ease-in-out infinite alternate; background:
+      radial-gradient(circle at 10% 10%, rgba(57,168,116,.38), transparent 30%),
+      radial-gradient(circle at 90% 18%, rgba(191,232,210,.75), transparent 34%),
+      radial-gradient(circle at 65% 95%, rgba(18,128,90,.20), transparent 36%),
+      linear-gradient(145deg, #D9F0E5 0%, #BFE2D2 48%, #E8F6EF 100%);"></div>
+  <sc-if value="{{ showTexture }}" hint-placeholder-val="{{ true }}">
+    <div aria-hidden="true" style="position: fixed; inset: 0; z-index: 1; pointer-events: none; opacity: .25; background-image: radial-gradient(rgba(6,59,42,.22) .6px, transparent .6px); background-size: 5px 5px; -webkit-mask-image: linear-gradient(to bottom, transparent, black 18%, black 82%, transparent); mask-image: linear-gradient(to bottom, transparent, black 18%, black 82%, transparent);"></div>
+  </sc-if>
+
+  <main aria-label="Oya Waste Management Limited company profile" style="position: relative; z-index: 2; width: min(1120px, 100%); display: flex; flex-direction: column; gap: clamp(10px, 1.2vw, 16px); padding: clamp(10px, 1.2vw, 16px); border: 1px solid rgba(255,255,255,.65); border-radius: clamp(22px, 2.4vw, 28px); background: rgba(255,255,255,.22); box-shadow: 0 30px 100px rgba(6,59,42,.16); backdrop-filter: blur(18px);">
+
+    <article data-screen-label="Hero" style="animation: oyaReveal .75s cubic-bezier(.2,.8,.2,1) .05s both; position: relative; overflow: hidden; display: flex; flex-direction: column; min-height: clamp(440px, 38vw, 470px); padding: clamp(25px, 3.2vw, 38px); border-radius: 20px; border: 1px solid rgba(255,255,255,.14); color: #F5FFF9; background: linear-gradient(135deg, rgba(6,59,42,.98), rgba(11,107,74,.96) 54%, rgba(57,168,116,.92)), #0B6B4A; box-shadow: 0 12px 35px rgba(6,59,42,.18);">
+      <div aria-hidden="true" style="position: absolute; width: clamp(340px, 46vw, 500px); height: clamp(340px, 46vw, 500px); right: clamp(-200px, -12vw, -150px); bottom: clamp(-300px, -20vw, -240px); border-radius: 50%; border: 1px solid rgba(255,255,255,.12); box-shadow: 0 0 0 45px rgba(255,255,255,.025), 0 0 0 90px rgba(255,255,255,.018);"></div>
+      <sc-if value="{{ heroTint }}" hint-placeholder-val="{{ false }}">
+        <div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none; background: radial-gradient(72% 90% at 90% 100%, rgba(57,168,116,.5), transparent 66%);"></div>
+      </sc-if>
+
+      <div style="position: relative; z-index: 2; display: flex; align-items: center; gap: 13px;">
+        <span aria-hidden="true" style="display: grid; place-items: center; width: 44px; height: 44px; flex: none; border: 1px solid rgba(255,255,255,.5); border-radius: 12px; font: 600 21px/1 'IBM Plex Sans', sans-serif; background: rgba(255,255,255,.10);">O</span>
+        <div>
+          <p style="margin: 0 0 3px; font: 500 10px/1.4 'IBM Plex Mono', monospace; letter-spacing: .14em; text-transform: uppercase; opacity: .65;">Oya Group</p>
+          <h1 style="margin: 0; font: 600 clamp(17px, 2vw, 21px)/1.08 'IBM Plex Sans', sans-serif; letter-spacing: -.035em;">Oya Waste<br />Management Limited</h1>
+        </div>
+      </div>
+
+      <div style="position: relative; z-index: 2; margin-top: clamp(86px, 9vw, 105px); max-width: 650px;">
+        <span style="font: 500 10px/1.4 'IBM Plex Mono', monospace; letter-spacing: .14em; text-transform: uppercase; color: rgba(245,255,249,.58);">Waste Management / Port Harcourt</span>
+        <p style="margin: 13px 0 0; font: 500 clamp(29px, 4vw, 50px)/1.05 'IBM Plex Sans', sans-serif; letter-spacing: -.045em; text-wrap: pretty;">Responsible waste management,<br /><em style="font-style: normal; color: #C8F0D9;">built around your environment.</em></p>
+      </div>
+
+      <div aria-hidden="true" style="position: absolute; right: clamp(-18px, 3vw, 78px); bottom: clamp(42px, 6%, 60px); z-index: 1; width: clamp(145px, 18vw, 210px); height: clamp(145px, 18vw, 210px); display: grid; place-items: center; border-radius: 50%; background: linear-gradient(145deg, rgba(255,255,255,.15), rgba(255,255,255,.025)); border: 1px solid rgba(255,255,255,.18); box-shadow: inset 0 0 70px rgba(255,255,255,.05);">
+        <span style="font: 600 clamp(105px, 13vw, 150px)/.7 'IBM Plex Sans', sans-serif; letter-spacing: -.16em; color: rgba(255,255,255,.10); transform: translateX(-7px);">O</span>
+      </div>
+
+      <div style="position: relative; z-index: 2; margin-top: auto; padding-top: 16px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 20px; border-top: 1px solid rgba(255,255,255,.15); font: 500 10px/1.4 'IBM Plex Mono', monospace; color: rgba(245,255,249,.62); text-transform: uppercase; letter-spacing: .08em;">
+        <span>Company Information</span>
+        <sc-if value="{{ showStatus }}" hint-placeholder-val="{{ true }}">
+          <span style="display: flex; align-items: center; gap: 7px;"><i style="width: 6px; height: 6px; border-radius: 50%; background: #8DE0B2; box-shadow: 0 0 0 4px rgba(141,224,178,.10);"></i> Available for enquiries</span>
+        </sc-if>
+      </div>
+    </article>
+
+    <div style="display: flex; flex-wrap: wrap; gap: clamp(10px, 1.2vw, 16px); align-items: stretch;">
+
+      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: clamp(10px, 1.2vw, 16px);">
+
+        <article data-screen-label="At a glance" style="animation: oyaReveal .75s cubic-bezier(.2,.8,.2,1) .12s both; position: relative; overflow: hidden; padding: clamp(25px, 2.6vw, 31px); border-radius: 20px; border: 1px solid rgba(255,255,255,.76); background: rgba(255,255,255,.92); box-shadow: 0 12px 35px rgba(6,59,42,.08);">
+          <div aria-hidden="true" style="position: absolute; width: 220px; height: 220px; right: -120px; bottom: -140px; border-radius: 50%; background: rgba(57,168,116,.07); pointer-events: none;"></div>
+          <div style="position: relative;">
+            <span style="font: 500 10px/1.4 'IBM Plex Mono', monospace; letter-spacing: .14em; text-transform: uppercase; color: #0B6B4A;">01 / Company</span>
+            <h2 style="margin: 9px 0 27px; font: 600 clamp(23px, 2.5vw, 31px)/1 'IBM Plex Sans', sans-serif; letter-spacing: -.045em;">At a glance</h2>
+            <div style="display: grid;">
+              <div style="padding: 16px 0; border-top: 1px solid rgba(16,35,27,.14);">
+                <span style="display: block; margin-bottom: 6px; color: #62716B; font: 500 10px/1.3 'IBM Plex Mono', monospace; text-transform: uppercase; letter-spacing: .09em;">Business</span>
+                <strong style="font: 600 14px/1.35 Manrope, sans-serif;">Oya Waste Management Limited</strong>
+              </div>
+              <div style="padding: 16px 0; border-top: 1px solid rgba(16,35,27,.14);">
+                <span style="display: block; margin-bottom: 6px; color: #62716B; font: 500 10px/1.3 'IBM Plex Mono', monospace; text-transform: uppercase; letter-spacing: .09em;">Location</span>
+                <strong style="font: 600 14px/1.35 Manrope, sans-serif;">Port Harcourt, Rivers State</strong>
+              </div>
+              <div style="padding: 16px 0; border-top: 1px solid rgba(16,35,27,.14);">
+                <span style="display: block; margin-bottom: 6px; color: #62716B; font: 500 10px/1.3 'IBM Plex Mono', monospace; text-transform: uppercase; letter-spacing: .09em;">Focus</span>
+                <strong style="font: 600 14px/1.35 Manrope, sans-serif;">Waste Management</strong>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article data-screen-label="Location" style="animation: oyaReveal .75s cubic-bezier(.2,.8,.2,1) .26s both; flex: 1 1 auto; position: relative; overflow: hidden; display: flex; flex-direction: column; padding: clamp(25px, 2.6vw, 31px); border-radius: 20px; border: 1px solid rgba(255,255,255,.76); background: rgba(255,255,255,.92); box-shadow: 0 12px 35px rgba(6,59,42,.08);">
+          <div aria-hidden="true" style="position: absolute; width: 220px; height: 220px; right: -120px; bottom: -140px; border-radius: 50%; background: rgba(57,168,116,.07); pointer-events: none;"></div>
+          <div style="position: relative; display: flex; flex-direction: column; height: 100%;">
+            <span style="font: 500 10px/1.4 'IBM Plex Mono', monospace; letter-spacing: .14em; text-transform: uppercase; color: #0B6B4A;">03 / Location</span>
+            <h2 style="margin: 9px 0 27px; font: 600 clamp(23px, 2.5vw, 31px)/1 'IBM Plex Sans', sans-serif; letter-spacing: -.045em;">Find us.</h2>
+            <div style="display: flex; align-items: flex-start; gap: 16px; padding: 17px 0; border-top: 1px solid rgba(16,35,27,.14);">
+              <div aria-hidden="true" style="flex: none; display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; color: #FFFFFF; background: #0B6B4A; "><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.5s7-6.1 7-11.1a7 7 0 1 0-14 0c0 5 7 11.1 7 11.1z"></path><circle cx="12" cy="10.2" r="2.6"></circle></svg></div>
+              <address style="margin: 1px 0 0; font: 500 13px/1.7 Manrope, sans-serif; font-style: normal; text-wrap: pretty;">6B, Boskel Road,<br />Opposite Port Harcourt/Aba Expressway,<br />Port Harcourt &mdash; Rivers State.</address>
+            </div>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=6B%20Boskel%20Road%20Port%20Harcourt%20Rivers%20State" target="_blank" rel="noopener noreferrer" style="align-self: flex-start; margin-top: auto; padding-top: 18px; color: #0B6B4A; font: 600 11px/1.3 'IBM Plex Mono', monospace; letter-spacing: .05em; text-transform: uppercase;" style-hover="text-decoration: underline;">Open location &#8599;</a>
+          </div>
+        </article>
+      </div>
+
+      <div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: clamp(10px, 1.2vw, 16px);">
+
+        <article data-screen-label="Contact" style="animation: oyaReveal .75s cubic-bezier(.2,.8,.2,1) .19s both; position: relative; overflow: hidden; padding: clamp(25px, 2.6vw, 31px); border-radius: 20px; border: 1px solid rgba(255,255,255,.76); background: rgba(255,255,255,.92); box-shadow: 0 12px 35px rgba(6,59,42,.08);">
+          <div aria-hidden="true" style="position: absolute; width: 220px; height: 220px; right: -120px; bottom: -140px; border-radius: 50%; background: rgba(57,168,116,.07); pointer-events: none;"></div>
+          <div style="position: relative;">
+            <span style="font: 500 10px/1.4 'IBM Plex Mono', monospace; letter-spacing: .14em; text-transform: uppercase; color: #0B6B4A;">02 / Contact</span>
+            <h2 style="margin: 9px 0 27px; font: 600 clamp(23px, 2.5vw, 31px)/1 'IBM Plex Sans', sans-serif; letter-spacing: -.045em;">Let&rsquo;s connect.</h2>
+            <div style="display: grid; gap: 8px;">
+              <a href="tel:+2348037333213" style="display: grid; grid-template-columns: 36px 1fr auto; align-items: center; gap: 12px; min-height: 68px; padding: 11px 13px; color: inherit; border: 1px solid rgba(16,35,27,.14); border-radius: 12px; transition: transform .25s ease, background .25s ease, border-color .25s ease;" style-hover="transform: translateX(4px); background: #E8F6EF; border-color: rgba(11,107,74,.22); color: #10231B;">
+                <span style="display: grid; place-items: center; width: 32px; height: 32px; border-radius: 8px; background: #E8F6EF; color: #0B6B4A; font: 500 10px/1 'IBM Plex Mono', monospace;">01</span>
+                <span style="min-width: 0;"><small style="display: block; margin-bottom: 3px; color: #62716B; font: 500 9px/1.2 'IBM Plex Mono', monospace; text-transform: uppercase; letter-spacing: .08em;">Phone</small><strong style="font: 600 12px/1.2 Manrope, sans-serif; word-break: break-word;">08037333213</strong></span>
+                <span aria-hidden="true" style="color: #0B6B4A; font-size: 17px;">&#8599;</span>
+              </a>
+              <a href="mailto:info@oyagroupng.com" style="display: grid; grid-template-columns: 36px 1fr auto; align-items: center; gap: 12px; min-height: 68px; padding: 11px 13px; color: inherit; border: 1px solid rgba(16,35,27,.14); border-radius: 12px; transition: transform .25s ease, background .25s ease, border-color .25s ease;" style-hover="transform: translateX(4px); background: #E8F6EF; border-color: rgba(11,107,74,.22); color: #10231B;">
+                <span style="display: grid; place-items: center; width: 32px; height: 32px; border-radius: 8px; background: #E8F6EF; color: #0B6B4A; font: 500 10px/1 'IBM Plex Mono', monospace;">02</span>
+                <span style="min-width: 0;"><small style="display: block; margin-bottom: 3px; color: #62716B; font: 500 9px/1.2 'IBM Plex Mono', monospace; text-transform: uppercase; letter-spacing: .08em;">Email</small><strong style="font: 600 12px/1.2 Manrope, sans-serif; word-break: break-word;">info@oyagroupng.com</strong></span>
+                <span aria-hidden="true" style="color: #0B6B4A; font-size: 17px;">&#8599;</span>
+              </a>
+              <a href="https://www.oyawaste.com/" target="_blank" rel="noopener noreferrer" style="display: grid; grid-template-columns: 36px 1fr auto; align-items: center; gap: 12px; min-height: 68px; padding: 11px 13px; color: inherit; border: 1px solid rgba(16,35,27,.14); border-radius: 12px; transition: transform .25s ease, background .25s ease, border-color .25s ease;" style-hover="transform: translateX(4px); background: #E8F6EF; border-color: rgba(11,107,74,.22); color: #10231B;">
+                <span style="display: grid; place-items: center; width: 32px; height: 32px; border-radius: 8px; background: #E8F6EF; color: #0B6B4A; font: 500 10px/1 'IBM Plex Mono', monospace;">03</span>
+                <span style="min-width: 0;"><small style="display: block; margin-bottom: 3px; color: #62716B; font: 500 9px/1.2 'IBM Plex Mono', monospace; text-transform: uppercase; letter-spacing: .08em;">Website</small><strong style="font: 600 12px/1.2 Manrope, sans-serif; word-break: break-word;">oyawaste.com</strong></span>
+                <span aria-hidden="true" style="color: #0B6B4A; font-size: 17px;">&#8599;</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article data-screen-label="Website CTA" style="animation: oyaReveal .75s cubic-bezier(.2,.8,.2,1) .33s both; flex: 1 1 auto; min-height: 244px; position: relative; overflow: hidden; display: flex; flex-direction: column; padding: clamp(25px, 2.6vw, 31px); border-radius: 20px; border: 1px solid rgba(255,255,255,.18); color: #F5FFF9; background: linear-gradient(145deg, #075238, #12805A); box-shadow: 0 12px 35px rgba(6,59,42,.16);">
+          <div aria-hidden="true" style="position: absolute; top: 22px; right: 25px; color: rgba(255,255,255,.13); font: 500 60px/1 'IBM Plex Mono', monospace;">04</div>
+          <span style="position: relative; font: 500 10px/1.4 'IBM Plex Mono', monospace; letter-spacing: .14em; text-transform: uppercase; color: rgba(245,255,249,.58);">Online</span>
+          <h2 style="position: relative; z-index: 1; margin: clamp(38px, 4.4vw, 52px) 0 31px; font: 600 clamp(27px, 3vw, 38px)/.96 'IBM Plex Sans', sans-serif; letter-spacing: -.05em;">Visit our<br />website.</h2>
+          <a href="https://www.oyawaste.com/" target="_blank" rel="noopener noreferrer" style="position: relative; z-index: 2; margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 46px; padding: 13px 14px; border: 1px solid rgba(255,255,255,.25); border-radius: 10px; color: #F5FFF9; background: rgba(255,255,255,.08); font: 600 11px/1 'IBM Plex Mono', monospace; letter-spacing: .06em; text-transform: uppercase; transition: background .25s ease, transform .25s ease;" style-hover="background: rgba(255,255,255,.15); transform: translateY(-2px); color: #FFFFFF;">
+            <span>oyawaste.com</span><span aria-hidden="true">&#8599;</span>
+          </a>
+        </article>
+      </div>
+    </div>
+
+    <footer style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 20px; padding: 5px 4px 1px; color: rgba(16,35,27,.62); font: 500 9px/1.4 'IBM Plex Mono', monospace; text-transform: uppercase; letter-spacing: .06em;">
+      <span style="white-space: nowrap;">&copy; {{ year }} Oya Waste Management Limited</span>
+      <span style="white-space: nowrap;">Port Harcourt &middot; Rivers State &middot; Nigeria</span>
+    </footer>
+  </main>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;showStatus&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Hero&quot;},
+  &quot;heroTint&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: false, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Hero&quot;},
+  &quot;showTexture&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Background&quot;}
+}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      year: new Date().getFullYear(),
+      showStatus: this.props.showStatus ?? true,
+      showTexture: this.props.showTexture ?? true,
+      heroTint: this.props.heroTint ?? false,
+    };
+  }
+}
+
+</script>
+</body>
+</html>
